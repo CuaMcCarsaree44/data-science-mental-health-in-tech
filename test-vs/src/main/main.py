@@ -1,0 +1,2 @@
+from handler.survey_mental_health_tech_handler import cluster_out
+cluster_out()
