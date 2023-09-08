@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3e85b866-72c5-457e-a247-e67eac67263b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>main.py</StartupFile>
+    <StartupFile>src\main\main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,17 +23,32 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="main.py" />
-    <Compile Include="submodule\features-dependencies.py" />
+    <Compile Include="src\main\constant\core.py" />
+    <Compile Include="src\main\handler\survey_mental_health_tech_handler.py" />
+    <Compile Include="src\main\main.py" />
+    <Compile Include="src\main\model\KMeansFactory.py" />
+    <Compile Include="src\main\repository\survey_mental_health_tech_repository.py" />
+    <Compile Include="src\main\submodule\features-dependencies.py" />
+    <Compile Include="src\main\util\print_data_dependency.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="data\" />
-    <Folder Include="constant\" />
-    <Folder Include="submodule\" />
+    <Folder Include="src\resources\data\" />
+    <Folder Include="src\main\constant\" />
+    <Folder Include="src\main\model\" />
+    <Folder Include="src\main\handler\" />
+    <Folder Include="src\" />
+    <Folder Include="src\main\" />
+    <Folder Include="src\test\" />
+    <Folder Include="src\resources\" />
+    <Folder Include="progress tracking\" />
+    <Folder Include="src\main\util\" />
+    <Folder Include="src\main\repository\" />
+    <Folder Include="src\main\submodule\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="data\data.txt" />
-    <Content Include="data\survey.csv" />
+    <Content Include="progress tracking\20230908.md" />
+    <Content Include="src\resources\data\data.md" />
+    <Content Include="src\resources\data\survey-mental-health-tech.csv" />
     <Content Include="readme.md" />
     <Content Include="requirements.txt" />
   </ItemGroup>
