@@ -1,2 +1,2 @@
-from handler.survey_mental_health_tech_handler import cluster_out
-cluster_out()
+from handler.survey_mental_health_tech_handler import handle_data_clustering
+handle_data_clustering()

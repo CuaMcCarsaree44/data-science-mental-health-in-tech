@@ -3,13 +3,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3e85b866-72c5-457e-a247-e67eac67263b</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
+    <ProjectHome>
+    </ProjectHome>
     <StartupFile>src\main\main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>test-vs</Name>
+    <Name>Mental Health Data Science</Name>
     <RootNamespace>test-vs</RootNamespace>
     <SuppressConfigureTestFrameworkPrompt>true</SuppressConfigureTestFrameworkPrompt>
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
@@ -32,6 +33,8 @@
     <Compile Include="src\main\util\print_data_dependency.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="progress tracking\attachment\" />
+    <Folder Include="progress tracking\attachment\20230910\" />
     <Folder Include="src\resources\data\" />
     <Folder Include="src\main\constant\" />
     <Folder Include="src\main\model\" />
@@ -46,7 +49,9 @@
     <Folder Include="src\main\submodule\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="progress tracking\20230910.md" />
     <Content Include="progress tracking\20230908.md" />
+    <Content Include="progress tracking\attachment\20230910\First Scatter.png" />
     <Content Include="src\resources\data\data.md" />
     <Content Include="src\resources\data\survey-mental-health-tech.csv" />
     <Content Include="readme.md" />
