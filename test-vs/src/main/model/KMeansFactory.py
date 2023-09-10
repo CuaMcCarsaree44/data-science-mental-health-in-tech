@@ -13,7 +13,7 @@ class KMeansFactory:
     __models
     This attribute made to store your KMeans models
     """
-    __models = [];
+    __models = {};
     
     """
     @public
@@ -22,8 +22,8 @@ class KMeansFactory:
 
     @return sklearn.cluster.KMeans
     """
-    def getModel(modelId):
-        return self.__models[modelId];
+    def getModel(self, model_id):
+        return self.__models[model_id];
 
     """
     @public
@@ -37,8 +37,8 @@ class KMeansFactory:
     
     @return void
     """
-    def fitModel(modelId, dataset):
-        self.__models[modelId].fit(dataset)
+    def fitModel(self, model_id, dataset):
+        self.__models[model_id].fit(dataset)
 
     """
     @public
@@ -52,5 +52,5 @@ class KMeansFactory:
     
     @return void
     """
-    def createModel(modelId, clusters = 5):
-        self.__models[modelId] = KMeans(n_clusters = clusters)
+    def createModel(self, model_id, clusters = 5):
+        self.__models[model_id] = KMeans(n_clusters = clusters)
