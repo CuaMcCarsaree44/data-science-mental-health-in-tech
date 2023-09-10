@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "test-vs", "test-vs\test-vs.pyproj", "{3E85B866-72C5-457E-A247-E67EAC67263B}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Mental Health Data Science", "test-vs\Mental Health Data Science.pyproj", "{3E85B866-72C5-457E-A247-E67EAC67263B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
